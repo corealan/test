@@ -1,11 +1,23 @@
-var c = 10;
-console.log(c);
-console.log("HELLO WORLD");
-console.log("HELLO MAMA");
+let money = prompt("Ваш бюджет на месяц?",""),
+time = prompt("Введите дату в формате YYYY-MM-DD","");
 
-var person = {
-    name : "Vasya Pupkin",
-    age : 23,
-    isMarried : true
+let appData = {
+    money: money,
+    timeData: time,
+    expenses: {},
+    optionalExpenses: {},
+    income: {},
+    savings: false
 };
-console.log(typeof("43"));
+
+let firstAnswer = prompt("Введите обязательную статью расходов в этом месяце", ""),
+secondAnswer = prompt("Во сколько это обойдется?", ""),
+thirdAnswer = prompt("Введите обязательную статью расходов в этом месяце", ""),
+fourthAnswer = prompt("Во сколько это обойдется?", "")
+
+appData.expenses = {
+    firstAnswer: secondAnswer,
+    thirdAnswer: fourthAnswer
+};
+
+alert(money/30);
