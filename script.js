@@ -13,11 +13,11 @@ let appData = {
 let firstAnswer = prompt("Введите обязательную статью расходов в этом месяце", ""),
 secondAnswer = prompt("Во сколько это обойдется?", ""),
 thirdAnswer = prompt("Введите обязательную статью расходов в этом месяце", ""),
-fourthAnswer = prompt("Во сколько это обойдется?", "")
+fourthAnswer = prompt("Во сколько это обойдется?", "");
 
 appData.expenses = {
     firstAnswer: secondAnswer,
     thirdAnswer: fourthAnswer
 };
 
-alert(money/30);
+alert(appData.money/30);
